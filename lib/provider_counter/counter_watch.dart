@@ -11,7 +11,7 @@ class CounterWatchPage extends StatelessWidget {
     final counterProv = context.watch<CounterProvider>();
     return Scaffold(
       appBar: AppBar(
-        title: Text('Provider Consumer Page'),
+        title: Text('Provider Watch Page'),
         backgroundColor:
             Colors.primaries[Random().nextInt(Colors.primaries.length)],
         centerTitle: true,

@@ -1,16 +1,15 @@
 # provider_example
 
-A new Flutter project.
+Flutter project to show different way to use ChangeNotifierProvider.
 
-## Getting Started
+## Pictures
 
-This project is a starting point for a Flutter application.
+![Home Page](/docs/home_page.png)
+![Counter Page](/docs/home_page.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Simple Examples, that show, how to call a local ChangeNotifierProvider, or declare a Global ChangeNotifierProvider,
+and how they rebuild the view when call notifyListeners()
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Also, the code from the Flutter State Managment example, that show a Cart and a Model, with a little tweak in the login,
+to show a local ChangeNotifierProvider that dispose when dispose the view.
