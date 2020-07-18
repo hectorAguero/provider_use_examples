@@ -1,10 +1,11 @@
-# Flutter Project: provider_example
+# Flutter Project: provider_example 😆
 
-A simple flutter example that show different ways to use ChangeNotifierProvider.
+A simple flutter example that show different ways to use ChangeNotifierProvider.🧷
 
-## Pictures
-
-![Home Page](/docs/home_page.png) ![Counter Page](/docs/counter_page.png)
+## Pictures 📷
+Home Page             |  Counter Consumer Page
+:-------------------------:|:-------------------------:
+![](/docs/home_page.png)  |  ![](/docs/counter_page.png)
 
 
 Simple Examples, that show, how to call a local ChangeNotifierProvider, or declare a Global ChangeNotifierProvider,
