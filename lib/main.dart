@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_example/home_page.dart';
-import 'package:provider_example/store_example/cart_page.dart';
-import 'package:provider_example/store_example/provider_cart.dart';
-import 'package:provider_example/store_example/provider_catalog.dart';
 
-import 'counter_watch_select/counter_consumer.dart';
-import 'counter_watch_select/counter_select.dart';
-import 'counter_watch_select/counter_selector.dart';
-import 'counter_watch_select/counter_watch.dart';
-import 'counter_watch_select/provider_counter.dart';
-import 'store_example/catalog_page.dart';
-import 'store_example/login_page.dart';
+import 'provider_counter/counter_watch_local.dart';
+import 'provider_counter/counter_consumer.dart';
+import 'provider_counter/counter_select.dart';
+import 'provider_counter/counter_selector.dart';
+import 'provider_counter/counter_watch.dart';
+import 'provider_counter/provider_counter.dart';
+import 'provider_store/cart_page.dart';
+import 'provider_store/catalog_page.dart';
+import 'provider_store/login_page.dart';
+import 'provider_store/provider_cart.dart';
+import 'provider_store/provider_catalog.dart';
 
 void main() {
   runApp(
@@ -23,6 +24,7 @@ void main() {
         // CartModel is implemented as a ChangeNotifier, which calls for the use
         // of ChangeNotifierProvider. Moreover, CartModel depends
         // on CatalogModel, so a ProxyProvider is needed.
+
         ChangeNotifierProxyProvider<CatalogProvider, CartProvider>(
           create: (context) => CartProvider(),
           update: (context, catalog, cart) {
@@ -42,13 +44,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       initialRoute: 'homePage',
+      debugShowCheckedModeBanner: false,
       routes: {
         'homePage': (context) => HomePage(),
         'counterWatch': (context) => CounterWatchPage(),
+        'counterLocal': (context) => CounterWatchLocalPage(),
         'counterConsumer': (context) => CounterConsumerPage(),
         'counterSelect': (context) => CounterSelectPage(),
         'counterSelector': (context) => CounterSelectorPage(),

@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:provider_example/store_example/provider_catalog.dart';
+import 'package:provider_example/provider_store/provider_catalog.dart';
 
 import 'model_item.dart';
 

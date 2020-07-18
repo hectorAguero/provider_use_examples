@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_example/store_example/provider_login.dart';
+import 'package:provider_example/provider_store/provider_login.dart';
 
 class LoginPage extends StatelessWidget {
   @override
